@@ -14,6 +14,7 @@ import { AdminAuthProvider } from "./context/AdminAuthContext";
 /* LAYOUT */
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import WhatsAppFloating from "./components/WhatsAppFloating";
 
 /* USER PAGES */
 import Home from "./pages/Home.jsx";
@@ -172,6 +173,7 @@ function AppWrapper() {
         </Routes>
       </div>
 
+      {!hideLayout && <WhatsAppFloating />}
       {!hideLayout && <Footer />}
     </>
   );
